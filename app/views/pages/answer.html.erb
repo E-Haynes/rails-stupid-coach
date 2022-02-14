@@ -1,0 +1,10 @@
+<h1> Your coach says: </h1>
+<% if params[:question] === "I am going to work" %>
+  <p>Great</p>>
+<% elsif params[:question][(params[:question].length - 1)] === "?" %>
+   <p>Stop asking such questions!</p>
+<% else %>
+   <p>You should be working!!</p>
+<% end %>
+</h2>
+<%= link_to "ask a new question", about_path %>
